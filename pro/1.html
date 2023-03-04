@@ -3,25 +3,34 @@
   <head>
     <title>Guess the Day</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="2.css">
   </head>
   <body>
-    <h1>Guess the Day</h1>
+    <div id="title">
+      <h1>Guess the Day</h1>
+    </div>
     <div id="game-container">
       <p id="date"></p>
       <div id="options">
-        <button class="option" onclick="checkAnswer(this)"></button>
-        <button class="option" onclick="checkAnswer(this)"></button>
-        <button class="option" onclick="checkAnswer(this)"></button>
-        <button class="option" onclick="checkAnswer(this)"></button>
+        <button class="option" onclick="checkAnswer(this)">Are</button>
+        <button class="option" onclick="checkAnswer(this)">You</button>
+        <button class="option" onclick="checkAnswer(this)">Ready</button>
+        <button class="option" onclick="checkAnswer(this)">?</button>
       </div>
-      <p>Score: <span id="score">0</span></p>
-      <p>Highest Score: <span id="highest-score">0</span></p>
-      <p>Remaining Time: <span id="remaining-time">30</span></p>
+      <div class="score">
+        <p>Score: <span id="score">0</span></p>
+      </div>
+      <div class="high">
+        <p>Highest Score: <span id="highest-score">0</span></p>
+      </div>
+      <div class="rem">
+        <p>Remaining Time: <span id="remaining-time">30</span></p>
+      </div> 
       <button id="start-button" onclick="startGame()">Start</button>
     </div>
     <div id="game-over-container">
       <h2>Game Over!</h2>
-      <p>Your Score: <span id="game-over-score"></span></p>
+      <p><b>Your Score:</b> <span id="game-over-score"></span></p>
       <button id="restart-button" onclick="restartGame()">Restart</button>
     </div>
     <audio id="correct-sound" src="correct.mp3"></audio>
