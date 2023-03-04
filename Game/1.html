@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess the Day</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="2.css">
+  </head>
+  <body>
+    <div id="title">
+      <h1>Guess the Day</h1>
+    </div>
+    <div id="game-container">
+      <p id="date"></p>
+      <div id="options">
+        <button class="option" onclick="checkAnswer(this)">Are</button>
+        <button class="option" onclick="checkAnswer(this)">You</button>
+        <button class="option" onclick="checkAnswer(this)">Ready</button>
+        <button class="option" onclick="checkAnswer(this)">?</button>
+      </div>
+      <div class="score">
+        <p>Score: <span id="score">0</span></p>
+      </div>
+      <div class="high">
+        <p>Highest Score: <span id="highest-score">0</span></p>
+      </div>
+      <div class="rem">
+        <p>Remaining Time: <span id="remaining-time">30</span></p>
+      </div> 
+      <button id="start-button" onclick="startGame()">Start</button>
+    </div>
+    <div id="game-over-container">
+      <h2>Game Over!</h2>
+      <p><b>Your Score:</b> <span id="game-over-score"></span></p>
+      <button id="restart-button" onclick="restartGame()">Restart</button>
+    </div>
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <title>GUESS THE DATE</title>
+  </head>
+  <body>
+    <h1>Remaining time: <span id="timer">30</span></h1>
+  </body>
+  <script src="script.js"></script>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game</title>
+  </head>
+  <body>
+    <h1>Game</h1>
+    <p>Score: <span id="score">0</span></p>
+    <p>Highest Score: <span id="highest-score">0</span></p>
+    <p>Remaining Time: <span id="remaining-time">30</span></p>
+  </body>
+  <script src="script.js"></script>
+</html>
